@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DictionaryThemeApplication.jnlp">
+  <information>
+    <title>DictionaryThemeApplication</title>
+    <vendor>Hope</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DictionaryThemeApplication.jar" size="23158634" download="eager" />
+    <jar href="lib\apiGoogle.jar" size="53236" download="eager" />
+    <jar href="lib\charm-glisten-4.4.1-javadoc.jar" size="2817088" download="eager" />
+    <jar href="lib\charm-glisten-4.4.1.jar" size="1040787" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\guava-22.0.jar" size="2575022" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\jl1.0.jar" size="105446" download="eager" />
+    <jar href="lib\marytts-builder-5.2-jar-with-dependencies.jar" size="35640312" download="eager" />
+    <jar href="lib\marytts-lang-en-5.2.jar" size="6908619" download="eager" />
+    <jar href="lib\voice-cmu-rms-hsmm-5.2.jar" size="1029161" download="eager" />
+    <jar href="lib\voice-cmu-slt-hsmm-5.2.jar" size="1242746" download="eager" />
+    <jar href="lib\voice-dfki-poppy-hsmm-5.2.jar" size="1017211" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DictionaryThemeApplication" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="dictionarythemeapplication.DictionaryApplication"  name="DictionaryThemeApplication" />
+  <update check="always"/>
+</jnlp>

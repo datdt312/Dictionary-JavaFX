@@ -1,0 +1,33 @@
+Đỗ Thành Đạt và Hà Minh Hải
+
+Phiên bản java dùng jdk 1.8.0_181
+
+File chạy jar trong thư mục "dist"
+
+Nếu trong thư mục "dist" không có file "dictionaries.txt", hãy copy file "dictionaries.txt" từ thư mục "src/dictionarythemeapplication".
+
+Cách chạy:
+
+Cách 1: Chạy kiểu lỗi font
+
+- Mở commandline tại folder "dist"
+
+- Gõ lệnh: java -jar DictionaryThemeApplication.jar
+
+Cách 2: Chạy kiểu không lỗi font
+
+- Mở commandline tại folder "dist"
+
+- Gõ lệnh: java -Dfile.encoding=utf-8 -jar DictionaryThemeApplication.jar
+
+Phiên bản Từ điển có tích hợp:
+
+- Thêm, xóa từ trong phiên hoạt động. (Tắt đi vào lại mất các từ đã thêm hoặc khôi phục lại các từ mặc định đã xóa)
+
+- Phát âm từ tiếng anh
+
+- Tra từ tiếng anh
+
+- Giao diện đồ họa
+
+- API google translate

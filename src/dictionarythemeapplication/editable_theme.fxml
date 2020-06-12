@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dictionarythemeapplication.AutoCompleteTextField?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionarythemeapplication.themeController">
+   <children>
+      <AnchorPane fx:id="topBar" prefHeight="79.0" prefWidth="434.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView fx:id="btn_find" layoutX="29.0" layoutY="21.0" onDragDetected="#handleTopBarAction" onMousePressed="#handleTopBarAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/search.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_addandremove" layoutX="107.0" layoutY="21.0" onDragDetected="#handleTopBarAction" onMousePressed="#handleTopBarAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/plus_and_minus.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_export" layoutX="190.0" layoutY="21.0" onDragDetected="#handleTopBarAction" onMousePressed="#handleTopBarAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/export.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_author" layoutX="272.0" layoutY="21.0" onDragDetected="#handleTopBarAction" onMousePressed="#handleTopBarAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/author.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_close" layoutX="355.0" layoutY="21.0" onDragDetected="#handleTopBarAction" onMousePressed="#handleTopBarAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/shutdown.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="top_author" layoutY="97.0" prefHeight="482.0" prefWidth="434.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView layoutX="169.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/male_user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="51.0" layoutX="283.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/sort_up.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="175.0" layoutY="155.0" style="-fx-font: 22px &quot;iCiel Nabila&quot;;" text="Tác giả:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="195.0" style="-fx-font: 46px &quot;iCiel Nabila&quot;;" text="Hà Minh Hải" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="277.0" style="-fx-font: 46px &quot;iCiel Nabila&quot;;" text="Đỗ Thành Đạt" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logo_hd4" layoutX="87.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logo_hd.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="top_close" layoutY="97.0" prefHeight="482.0" prefWidth="434.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="51.0" layoutX="360.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/sort_up.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="53.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font: 30px &quot;iCiel Soup of Justice&quot;;" text="Bạn thực sự muốn thoát?" />
+            <JFXButton fx:id="no_close" layoutX="220.0" layoutY="165.0" onAction="#handleButtonNoClose" onMousePressed="#handleButtonNoClose" prefHeight="40.0" prefWidth="109.0" style="-fx-background-radius: 10em; -fx-background-color: #00FFFF; -fx-font: 18px &quot;iCiel Soup of Justice&quot;;" text="Không" />
+            <JFXButton fx:id="yes_close" contentDisplay="CENTER" layoutX="105.0" layoutY="165.0" onAction="#handleButtonYesClose" onMousePressed="#handleButtonYesClose" prefHeight="41.0" prefWidth="109.0" style="-fx-background-radius: 10em; -fx-background-color: #00FFFF; -fx-font: 18px &quot;iCiel Soup of Justice&quot;;" text="Có" textAlignment="CENTER" />
+            <ImageView fx:id="logo_hd5" layoutX="83.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logo_hd.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="top_export" layoutY="97.0" prefHeight="482.0" prefWidth="434.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="51.0" layoutX="196.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/sort_up.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="167.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/export_to_file.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="filename" focusColor="#00ffb5" layoutX="86.0" layoutY="201.0" prefHeight="40.0" prefWidth="251.0" promptText="Điền tên file bạn muốn lưu dữ liệu . . ." style="-fx-background-color: TRANSPARENT; -fx-font: 18px &quot;iCiel Altus&quot;; -fx-text-fill: WHITE; -fx-prompt-text-fill: WHITE;" text="Điền tên file bạn muốn lưu dữ liệu . . ." unFocusColor="#00ffb5" />
+            <JFXButton fx:id="btn_savetofile" layoutX="151.0" layoutY="261.0" onMousePressed="#exportToFile" prefHeight="41.0" prefWidth="109.0" ripplerFill="TRANSPARENT" style="-fx-background-radius: 10em; -fx-background-color: WHITE; -fx-text-fill: #FF4500; -fx-font: 20px &quot;iCiel Altus&quot;;" text="Lưu ra file" textFill="#ff9700" />
+            <ImageView fx:id="logo_hd3" layoutX="82.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logo_hd.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="top_addandremove" layoutY="97.0" prefHeight="482.0" prefWidth="434.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="51.0" layoutX="112.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/sort_up.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="word_add" layoutX="14.0" layoutY="82.0" prefHeight="38.0" prefWidth="299.0" promptText="Nhập từ muốn thêm . . ." style="-fx-prompt-text-fill: BLACK; -fx-text-fill: BLACK; -fx-font: 24px &quot;iCiel Altus&quot;;" />
+            <TextField fx:id="mean_add" layoutX="14.0" layoutY="133.0" prefHeight="38.0" prefWidth="299.0" promptText="Nghĩa của từ muốn thêm . . ." style="-fx-prompt-text-fill: BLACK; -fx-font: 24px &quot;iCiel Altus&quot;;" />
+            <JFXButton fx:id="btn_add" layoutX="320.0" layoutY="106.0" onAction="#AddWord" onMousePressed="#AddWord" prefHeight="55.0" prefWidth="100.0" ripplerFill="BLACK" style="-fx-background-color: #90EE90; -fx-background-radius: 10em; -fx-font: 24px &quot;iCiel Altus&quot;; -fx-text-fill: #FF4500;" text="Thêm từ" textAlignment="CENTER" />
+            <TextField fx:id="word_delete" layoutX="14.0" layoutY="318.0" prefHeight="38.0" prefWidth="299.0" promptText="Nhập từ muốn xóa . . ." style="-fx-text-fill: BLACK; -fx-prompt-text-fill: BLACK; -fx-font: 24px &quot;iCiel Altus&quot;;" />
+            <JFXButton fx:id="btn_remove" layoutX="320.0" layoutY="322.0" onAction="#RemoveWord" onMousePressed="#RemoveWord" prefHeight="51.0" prefWidth="100.0" ripplerFill="BLACK" style="-fx-background-color: #90EE90; -fx-background-radius: 10em; -fx-border-radius: 10em; -fx-font: 24px &quot;iCiel Altus&quot;; -fx-text-fill: #FF4500;" text="Xóa từ" textAlignment="CENTER" />
+            <Label layoutX="69.0" layoutY="23.0" prefHeight="40.0" prefWidth="149.0" style="-fx-text-fill: WHITE; -fx-font: 40px &quot;iCiel Soup of Justice&quot;;" text="Thêm Từ" textAlignment="CENTER" />
+            <Label layoutX="69.0" layoutY="261.0" prefHeight="40.0" prefWidth="149.0" style="-fx-text-fill: WHITE; -fx-font: 40px &quot;iCiel Soup of Justice&quot;;" text="Xóa Từ" textAlignment="CENTER" />
+            <ImageView fx:id="logo_hd1" layoutX="86.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logo_hd.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="top_hddict" layoutY="66.0" prefHeight="362.0" prefWidth="434.0" style="-fx-background-color: TRANSPARENT;">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/HD_Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="top_find" layoutY="97.0" prefHeight="482.0" prefWidth="434.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="51.0" layoutX="35.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/sort_up.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btn_translate" buttonType="RAISED" ellipsisString="" layoutX="341.0" layoutY="18.0" onAction="#translateWord" onMousePressed="#translateWord" prefHeight="41.0" prefWidth="70.0" ripplerFill="TRANSPARENT" style="-fx-background-color: #ffb600; -fx-background-radius: 10em; -fx-font: 20px &quot;iCiel Altus&quot;;" text="Dịch" visible="false" />
+            <ImageView fx:id="logo_hd2" layoutX="83.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logo_hd.png" />
+               </image>
+            </ImageView>
+            <JFXTextArea fx:id="explain_area" editable="false" focusColor="TRANSPARENT" layoutX="35.0" layoutY="80.0" prefHeight="323.0" prefWidth="299.0" style="-fx-background-color: TRANSPARENT; -fx-text-fill: WHITE; -fx-font: 22px &quot;iCiel Altus Serif&quot;;" unFocusColor="TRANSPARENT" />
+            <ImageView fx:id="btn_speaker1" layoutX="351.0" layoutY="119.0" onMousePressed="#speaker_word" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/sound.png" />
+               </image></ImageView>
+            <ImageView fx:id="btn_translate1" layoutX="351.0" layoutY="14.0" onMousePressed="#translateWord" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/chrome.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="btn_translate2" layoutX="365.0" layoutY="59.0" onMousePressed="#translateWord" style="-fx-background-color: TRANSPARENT; -fx-text-fill: WHITE; -fx-font: 20px &quot;iCiel Altus&quot;;" text="Dịch" />
+            <ImageView layoutX="353.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+            <AutoCompleteTextField fx:id="auto_tf" layoutX="21.0" layoutY="13.0" onKeyReleased="#clear_Text_Area" prefHeight="38.0" prefWidth="299.0" promptText=" Nhập từ bạn muốn dịch . . ." style="-fx-prompt-text-fill: WHITE; -fx-background-color: TRANSPARENT; -fx-text-fill: WHITE; -fx-font: 24px &quot;iCiel Altus&quot;; -fx-border-color: WHITE;" />
+            <Label fx:id="btn_speaker2" layoutX="366.0" layoutY="162.0" onMousePressed="#speaker_word" style="-fx-background-color: TRANSPARENT; -fx-text-fill: WHITE; -fx-font: 20px &quot;iCiel Altus&quot;;" text="Đọc" />
+            <Label fx:id="btn_dichVB2" layoutX="337.0" layoutY="263.0" onMousePressed="#openDichVanBanWindow" style="-fx-background-color: TRANSPARENT; -fx-font: 20px &quot;iCiel Altus&quot;; -fx-text-fill: WHITE;" text="Dịch Văn Bản" />
+            <ImageView fx:id="btn_dichVB1" layoutX="353.0" layoutY="217.0" onMousePressed="#openDichVanBanWindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/more_options.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="top_dichvb" layoutY="96.0" prefHeight="482.0" prefWidth="434.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <ImageView fx:id="btn_back1" layoutX="9.0" layoutY="10.0" onMousePressed="#closeDichVanBanWindow" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/back.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="btn_back2" layoutX="4.0" layoutY="43.0" onMousePressed="#closeDichVanBanWindow" style="-fx-font: 20px &quot;iCiel Altus&quot;; -fx-text-fill: WHITE;" text="Quay lại" />
+            <Label fx:id="btn_dvb" layoutX="159.0" layoutY="257.0" style="-fx-font: 24px &quot;iCiel Altus&quot;; -fx-text-fill: WHITE; -fx-border-color: WHITE; -fx-border-style: solid; -fx-stroke-width: 5;" text=" Dịch văn bản " />
+            <ImageView layoutX="123.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/google.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="170.0" layoutY="10.0" style="-fx-font: 30px &quot;iCiel Altus&quot;; -fx-text-fill: WHITE; -fx-border-color: WHITE;" text=" API Dịch Văn Bản Google " />
+            <TextArea fx:id="input_text" layoutX="5.0" layoutY="69.0" onKeyReleased="#dichVanBan" prefHeight="184.0" prefWidth="424.0" promptText="Nhập văn bản cần dịch . . ." style="-fx-background-color: TRANSPARENT; -fx-text-fill: BLACK; -fx-border-color: BLACK; -fx-font: 20px &quot;iCiel Altus&quot;;" />
+            <TextArea fx:id="output_text" editable="false" layoutX="5.0" layoutY="292.0" prefHeight="190.0" prefWidth="424.0" style="-fx-background-color: TRANSPARENT; -fx-text-fill: BLACK; -fx-border-color: BLACK; -fx-font: 20px &quot;iCiel Altus&quot;;" />
+            <ImageView fx:id="spk_inp" layoutX="378.0" layoutY="83.0" onMousePressed="#docVanBan" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/wave.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="spk_out" layoutX="379.0" layoutY="304.0" onMousePressed="#docVanBan" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/wave.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb_spk_inp" layoutX="385.0" layoutY="109.0" onMousePressed="#docVanBan" style="-fx-font: 20px &quot;iCiel Altus&quot;;" text="Đọc" />
+            <Label fx:id="lb_spk_out" layoutX="386.0" layoutY="330.0" onMousePressed="#docVanBan" style="-fx-font: 20px &quot;iCiel Altus&quot;;" text="Đọc" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
